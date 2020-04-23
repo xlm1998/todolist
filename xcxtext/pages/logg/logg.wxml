@@ -1,0 +1,27 @@
+<view class="todolist">
+  <view class="header">
+    todolist
+  <input placeholder="添加ToDo" bindconfirm="add" ></input>
+  </view>
+  <view class="shu">  正在进行 {{num}}</view>
+  <block  wx:for="{{list}}" wx:key="index" wx:if="{{!item.type}}" >
+  <view class="list" >
+   <checkbox   bindtap="change" checked="{{item.type}}" data-index="{{index}}"  />
+   <text wx:if="{{!item.zone}}" bindtap="show" data-index="{{index}}">{{item.user}}</text>
+   <input type="text" class="inp"  wx:if="{{item.zone}}" value="{{item.user}}" data-index="{{index}}" bindblur="show1"> </input>
+   <button size="mini" bindtap="del" data-index="{{index}}">删除</button>
+   </view>
+  </block>
+  
+<view class="shu"> 已完成{{sum}}</view>
+ <block  wx:for="{{list}}" wx:key="index" >
+  <view class="list" wx:if="{{item.type}}">
+   <checkbox   bindtap="change" checked="{{item.type}}" data-index="{{index}}"  />
+  <text wx:if="{{!item.zone}}" bindtap="show" data-index="{{index}}">{{item.user}}</text>
+   <input type="text" class="inp"  wx:if="{{item.zone}}" value="{{item.user}}" data-index="{{index}}" bindblur="show1"> </input>
+   <button size="mini" bindtap="del" data-index="{{index}}">删除</button>
+   </view>
+  </block>
+
+
+</view>

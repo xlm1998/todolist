@@ -1,0 +1,25 @@
+<!--pages/cart/cart.wxml-->
+<swiper indicator-dots="true" autoplay="true">
+ <swiper-item>
+ <image src="/images/1.jpg" mode="aspectFill"></image>
+ </swiper-item>
+  <swiper-item>
+ <image src="/images/2.jpg"mode="aspectFill"></image>
+ </swiper-item>
+  <swiper-item>
+ <image src="/images/3.jpg"mode="aspectFill"></image>
+ </swiper-item>
+
+</swiper>
+<view class="list">
+<view class="list-q">
+<x-nan/>
+<x-nan/>
+<x-nan/>
+<x-nan/>
+<x-nan/>
+<x-nan/>
+</view>
+
+
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-nan":"/components/x-nan/x-nan"
+  },
+  "navigationBarTitleText": "购物车"
+}

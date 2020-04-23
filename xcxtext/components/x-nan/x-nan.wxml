@@ -1,0 +1,5 @@
+<view class="hai">
+<image src="/images/1.jpg" mode="aspectFill"></image>
+<text>海绵宝宝</text>
+</view>
+

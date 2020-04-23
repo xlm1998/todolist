@@ -1,0 +1,19 @@
+/* components/x-nan.wxss */
+.hai{
+  width: 100px;
+  height: 130px;
+  background-color: #fff;
+  
+}
+.hai image{
+  
+  width: 100px;
+  height: 100px;
+}
+.hai text{
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  text-align: center;
+}
