@@ -1,1 +1,59 @@
 /* pages/my/my.wxss */
+.box{
+  width: 100%;
+
+ 
+}
+.box .tit{
+   width: 100%;
+   height: 60rpx;
+   line-height: 60rpx;
+   padding-left: 20rpx;
+   margin:0 0 20rpx 0;
+}
+.hotmove{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hot-title{
+  width: 33.3%;
+  height: 350rpx;
+}
+.hot-title image{
+  display: block;
+  width:192rpx;
+  height:260rpx;
+  margin: 0 auto;
+  border-radius: 10rpx;
+}
+.hot-title .titt{
+  display: block;
+  width: 226rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+ padding-left: 34rpx;
+ box-sizing: border-box;
+font-size: 24rpx;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.hot-ping{
+  width: 100%;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  padding-left: 34rpx;
+  box-sizing: border-box;
+}
+.hot-ping>text{
+ display:block;
+ width: 80rpx;
+ height: 40rpx;
+ line-height: 40rpx;
+}
+.hot-ping text:nth-child(2){
+  color: red;
+}

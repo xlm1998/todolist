@@ -1,18 +1,66 @@
 // pages/my/my.js
+
+const urls=require('../../api/api')
+  console.log(urls)
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+       hotmove:[],
+       flag:true,
+       move:[],
+       shang:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    if(this.data.flag){
+      wx.showLoading({
+        title: '加载中',
+      })
+    }
+   
+        wx.request({
+          url: urls.hotmove,
+          header:{
+             'content-type':'application/text'
+          },
+          success:(res)=>{
+           console.log(res.data.subjects)
+             this.setData({hotmove:res.data.subjects})
+           
+          }
+        })
+        wx.request({
+          url: urls.move250,
+          header:{
+             'content-type':'application/text'
+          },
+          success:(res)=>{
+           console.log(res.data.subjects)
+             this.setData({move:res.data.subjects})
+            
+          }
+        })
+        wx.request({
+          url: urls.shangmove,
+          header:{
+             'content-type':'application/text'
+          },
+          success:(res)=>{
+           console.log(res.data.subjects)
+             this.setData({shang:res.data.subjects,flag:false})
+             if(!this.data.flag){
+              wx.hideLoading()
+             }
+            
+          }
+        })
+      
   },
 
   /**
@@ -62,5 +110,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  godet(options){
+    console.log(options)
+    let {id}=options.currentTarget.dataset
+    console.log(id)
+        wx.navigateTo({
+          url: `/pages/details/details?id=${id}`,
+        })
   }
 })

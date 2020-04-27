@@ -1,0 +1,83 @@
+/* pages/details/details.wxss */
+.details{
+  width: 100%;
+}
+.details-h{
+  width: 100%;
+  height: 300rpx;
+  background: #7f776e;
+  padding: 24rpx;
+  display: flex;
+}
+.details-h .img{
+  display: block;
+  width: 280rpx;
+  height:300rpx ;
+}
+.details-r{
+  width: 450rpx;
+  height: 300rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+ .details-t{
+  width: 400rpx;
+  display: block;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 36rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ .details-j{
+  width: 400rpx;
+  display: block;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 32rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.details-r .details-x{
+  width: 400rpx;
+  height: 100rpx;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+}
+.tu{
+  display: block;
+  width: 400rpx;
+  height: 60rpx ;
+  margin-top: 20rpx;
+}
+.tu1{
+  display: block;
+  width: 706rpx;
+  height: 200rpx;
+  margin: 20rpx auto ;
+}
+.deta text{
+  display: block;
+  width: 100%;
+  height: 60rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  font-size: 40rpx;
+  line-height: 60rpx;
+}
+.deta view{
+  width: 750rpx;
+  height: 60rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+  line-height: 40rpx;
+  font-size: 24rpx;
+}

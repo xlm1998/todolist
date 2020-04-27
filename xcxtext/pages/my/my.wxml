@@ -1,6 +1,40 @@
-<x-list></x-list>
-<x-list></x-list>
-<x-list></x-list>
-<x-list></x-list>
-<x-list></x-list>
-<x-list></x-list>
+
+<view class="box">
+ <view class="tit"> 豆瓣热门</view>
+<view class="hotmove">
+<view wx:for="{{hotmove}}" wx:key="{{index}}" class="hot-title" catchtap="godet" data-id="{{item.id}}">
+<image src="{{item.images.small}}"></image>
+<text class="titt">{{item.title}}</text>
+<view class="hot-ping">
+<text>评分：</text>
+<text style="color=red">{{item.rating.average}}</text>
+</view>
+ 
+</view>
+</view>
+ <view class="tit"> top250</view>
+<view class="hotmove">
+<view wx:for="{{move}}" wx:key="{{index}}" class="hot-title" catchtap="godet" data-id="{{item.id}}">
+<image src="{{item.images.small}}"></image>
+<text class="titt">{{item.title}}</text>
+<view class="hot-ping">
+<text>评分：</text>
+<text style="color=red">{{item.rating.average}}</text>
+</view>
+ 
+</view>
+</view>
+
+ <view class="tit">正在上映</view>
+<view class="hotmove">
+<view wx:for="{{shang}}" wx:key="{{index}}" class="hot-title" catchtap="godet" data-id="{{item.id}}">
+<image src="{{item.images.small}}"></image>
+<text class="titt">{{item.title}}</text>
+<view class="hot-ping">
+<text>评分：</text>
+<text style="color=red">{{item.rating.average}}</text>
+</view>
+ 
+</view>
+</view>
+</view>

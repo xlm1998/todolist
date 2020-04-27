@@ -4,8 +4,10 @@
      "pages/logg/logg",
     "pages/cart/cart",
     "pages/my/my",
+    "pages/search/search",
     "components/x-nan/x-nan",
-    "components/list/list"
+    "pages/details/details"
+  
   ],
   "window": {
     "backgroundTextStyle": "light",

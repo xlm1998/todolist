@@ -1,0 +1,22 @@
+<view class="details">
+<view class="details-h">
+  <image src="{{obj.img}}" class="img"></image>
+  <view class="details-r">
+  <text class="details-t">{{obj.ztitle}}</text>
+  <text class="details-j"> {{obj.title}} ({{obj.year}})</text>
+  <view class="details-x">{{obj.huo}}/{{obj.lei}}/{{obj.data}}({{obj.huo}})上映/片长{{obj.lone}}</view>
+  <view><image src="../../images/dou_03.jpg"  class="tu"></image></view>
+  </view>
+   
+</view>
+
+ <view><image src="../../images/dou_07.jpg"  class="tu1"></image></view>
+ <view class="deta">
+ <text>剧情介绍</text>
+ <view>
+ {{obj.jian}}
+ 
+ </view>
+ 
+ </view>
+</view>
